@@ -1,4 +1,4 @@
-# REST-API-CLIENT 
+## MULTITHREADED-CHAT-APPLICATION
 
 **COMPANY:** CODTECH IT SOLUTIONS  
 **NAME:** PATEL HARSH  
@@ -9,43 +9,61 @@
 
 ---
 
-## 📝 TASK DESCRIPTION
+## 📌 Project Overview
 
-This Java application retrieves upcoming public holidays for any country by integrating with the **Nager.Date REST API**. It demonstrates key backend programming skills by:
+This Java-based project illustrates a **multithreaded client-server chat system** using Java Sockets. It supports real-time messaging between multiple clients, all managed through a central server process.
 
-- Accepting country codes (e.g., `US`, `IN`) from user input  
-- Performing HTTP GET requests using Java’s `HttpClient` API  
-- Parsing JSON responses with the `org.json` library  
-- Handling invalid inputs and API errors gracefully  
-- Displaying holiday names, dates, and local descriptions  
+### 🔍 Features & Concepts Demonstrated:
 
-This mini-project is a practical exercise in working with third-party APIs and JSON in Java.
+- Implementation of TCP connections via `ServerSocket` and `Socket`
+- Concurrent client handling using Java multithreading
+- Real-time **broadcasting** of messages from one client to all others
+- Thread-safe communication and clean shutdown handling
+- Simple **console-based UI** for focus on networking logic
+
+This project serves as a beginner-friendly introduction to Java’s network programming capabilities.
 
 ---
 
-## ⚙️ SETUP: Adding `org.json` Library
+## ▶️ How to Run the Application
 
-1. Download `json-20210307.jar` from the Maven repository:  
-   📥 [Download Here](https://repo1.maven.org/maven2/org/json/json/20210307/json-20210307.jar)
+### 1️⃣ Compile the Source Code
 
-2. Place the file in your project folder, for example:  
-   `C:\JAVA\Codtech_Tasks-2\`
+Navigate to the project folder and compile the Java files:
 
-3. Compile and run the Java file with the jar in the classpath:
-
-
-**Compile**
 ```
-javac -cp .;json-20210307.jar HolidayFetcher.java
+javac ChatServer.java ChatClient.java
 ```
+## ▶️ 2. Start the Server
+Run the server using:
 
-**Run**
 ```
-java -cp .;json-20210307.jar HolidayFetcher
+java ChatServer
 ```
----
+Keep this terminal open — it will handle all client messages and broadcasts.
 
-## ✅ CONCLUSION
+## 🧑‍💻 3. Start the Clients
+Open a new terminal for each client and run:
 
-This project offered practical exposure to real-time API integration using Java. By working with RESTful web services, parsing JSON responses, and handling user input and errors effectively, I strengthened my backend development skills. The experience provided a solid foundation for building more complex API-driven applications in the future.
+```
+java ChatClient
+```
+You’ll be prompted to enter your name.
 
+Type messages to broadcast them to all connected users.
+
+Open multiple terminals to simulate multiple clients.
+
+## ✅ Conclusion
+This project provided practical experience in building a real-time chat application using Java's socket programming and multithreading features. It serves as a stepping stone toward more advanced messaging systems.
+
+🔄 Future Improvements:
+🌐 Add GUI using JavaFX or Swing for a user-friendly experience
+
+🔐 Implement authentication and user registration
+
+📨 Enable private messages and group chat features
+
+💾 Store chat history in files or databases
+
+🌍 Deploy the server on a remote host for online access
