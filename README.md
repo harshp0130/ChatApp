@@ -1,8 +1,8 @@
-# REST-API-CLIENT – PUBLIC HOLIDAYS FETCHER
+# REST-API-CLIENT 
 
 **COMPANY:** CODTECH IT SOLUTIONS  
 **NAME:** PATEL HARSH  
-**INTERN ID:** CT04DM112 
+**INTERN ID:** CT04DM112  
 **DOMAIN:** JAVA PROGRAMMING  
 **DURATION:** 4 WEEKS  
 **MENTOR:** NEELA SANTOSH  
@@ -33,13 +33,16 @@ This mini-project is a practical exercise in working with third-party APIs and J
 
 3. Compile and run the Java file with the jar in the classpath:
 
-```bash
-# Compile
+
+**Compile**
+```
 javac -cp .;json-20210307.jar HolidayFetcher.java
+```
 
-# Run
+**Run**
+```
 java -cp .;json-20210307.jar HolidayFetcher
-
+```
 ---
 
 ## ✅ CONCLUSION
