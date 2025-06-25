@@ -39,3 +39,10 @@ javac -cp .;json-20210307.jar HolidayFetcher.java
 
 # Run
 java -cp .;json-20210307.jar HolidayFetcher
+
+---
+
+## ✅ CONCLUSION
+
+This project offered practical exposure to real-time API integration using Java. By working with RESTful web services, parsing JSON responses, and handling user input and errors effectively, I strengthened my backend development skills. The experience provided a solid foundation for building more complex API-driven applications in the future.
+
